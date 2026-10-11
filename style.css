@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-1 {
+    background-color: hsla(241, 81%, 54%, 0.9);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    gap: 0.75rem;
+    z-index: 2;
+}
+
+.container-1 h3 {
+    font-weight: 500;
+    color: rgb(197, 197, 197);
+}
+
+.container-1 .score {
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(256, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 2.2rem;
+    margin: 1rem 0;
+}
+
+.score .raw-score {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.score .out-of {
+    font-weight: 500;
+    color: rgb(197, 197, 197);
+}
+
+.container-1 h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.container-1 .description {
+    font-weight: 500;
+    color: rgb(197, 197, 197);
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+
+.container-2 {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 2rem 2rem 2rem 3rem;
+    gap: 0.75rem;
+    z-index: 1;
+    margin-left: -2rem;
+    width: 400px;
+    max-height: 480px
+
+}
+
+.container-2 h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.result {
+    display: flex;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.result .tag{
+    display:flex;
+    gap: 0.75rem;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.result .score{
+    color: black;
+    font-weight: 700;
+}
+
+.result .out-of{
+    font-weight: 800;
+    color: rgb(197, 197, 197);;
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.container-2 button{
+    background-color:rgb(62, 62, 90);
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    margin: 1.25rem 0 0.5rem;
+}
