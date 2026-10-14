@@ -17,7 +17,7 @@ body {
 }
 
 .container-1 {
-    background-image: linear-gradient(to bottom,hsla(241, 70%, 50%, 0.75), hsla(241, 75%, 48%, 0.9));
+    background-image: linear-gradient(to bottom, hsla(241, 70%, 50%, 0.75), hsla(241, 75%, 48%, 0.9));
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -101,8 +101,8 @@ body {
     justify-content: space-between;
 }
 
-.result .tag{
-    display:flex;
+.result .tag {
+    display: flex;
     gap: 0.75rem;
     font-weight: 500;
 }
@@ -112,14 +112,15 @@ body {
     color: hsl(0, 100%, 67%);
 }
 
-.result .score{
+.result .score {
     color: black;
     font-weight: 700;
 }
 
-.result .out-of{
+.result .out-of {
     font-weight: 800;
-    color: rgb(197, 197, 197);;
+    color: rgb(197, 197, 197);
+    ;
 }
 
 .memory {
@@ -137,8 +138,8 @@ body {
     color: hsl(234, 85%, 45%);
 }
 
-.container-2 button{
-    background-color:rgb(62, 62, 90);
+.container-2 button {
+    background-color: rgb(62, 62, 90);
     color: white;
     padding: 1rem;
     font-size: 0.9rem;
@@ -148,7 +149,39 @@ body {
     letter-spacing: 0.5px;
 }
 
-.container-2 button:hover{
-    background-image:linear-gradient(to bottom, hsl(252, 70%, 55%),hsl(241, 64%, 49%));
+.container-2 button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 70%, 55%), hsl(241, 64%, 49%));
     cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container-2 {
+        padding: 2rem;
+        margin-left: 0;
+    }
+
+    .container-1 {
+        max-width: 375px;
+        height: 415px;
+        margin-top: -1.2rem;
+        padding-top: 3rem;
+    }
+
+    .container-1 .score {
+        padding: 2rem;
+        margin: 0.5rem 0;
+    }
+
+    .container-1 h2 {
+        margin-bottom: 0;
+    }
+
+    .container-2 button {
+        margin: 1rem 0 0.5rem;
+    }
+
 }
