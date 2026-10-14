@@ -13,11 +13,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container-1 {
-    background-color: hsla(241, 81%, 54%, 0.9);
+    background-image: linear-gradient(to bottom,hsla(241, 81%, 54%, 0.75), hsla(241, 81%, 54%, 0.9));
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -98,6 +98,7 @@ body {
 .result .tag{
     display:flex;
     gap: 0.75rem;
+    font-weight: 500;
 }
 
 .reaction {
@@ -138,4 +139,10 @@ body {
     font-weight: 700;
     border-radius: 2rem;
     margin: 1.25rem 0 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.container-2 button:hover{
+    background-color: hsl(241, 81%, 54%);
+    cursor: pointer;
 }
